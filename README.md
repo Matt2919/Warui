@@ -39,4 +39,4 @@ In order to gather line-by-line coverage details for the report, run:
 
 "make clean"
 
-*Remember to clean before pushing to GitHub, keeps unnecessary files
+*Remember to clean before pushing to GitHub, cleans unnecessary files
