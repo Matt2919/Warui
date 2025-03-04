@@ -1,7 +1,6 @@
 #include<iostream>
 #include<vector>
 #include <chrono>
-#include <thread>
 using namespace std;
 
 void die(const string &s = "BAD INPUT!") {
