@@ -28,6 +28,7 @@ int main() {
 
     vector<string> digits = { "ZERO", "ICHI", "NI", "SAN", "YON", "GO", "ROKU", "NANA", "HACHI", "KYUU" };
     vector<string> powers = { "JYUU", "HYAKU", "SEN", "MAN" };
+    // test
 
     int startNum = 0;
     cout << "Please enter a number to start with: " << endl;
