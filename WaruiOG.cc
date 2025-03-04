@@ -1,14 +1,28 @@
 #include<iostream>
 #include<vector>
+#include <chrono>
+#include <thread>
 using namespace std;
 
 void die(const string &s = "BAD INPUT!") {
  cout << s << endl;
  exit(EXIT_FAILURE);
 }
+// Funny timer stuf
+class Timer {
+public:
+   Timer() : start(chrono::high_resolution_clock::now()) {}
+   ~Timer() {
+        auto end = chrono::high_resolution_clock::now();
+        double elapsed = chrono::duration<double>(end - start).count();
+        cout << "Elapsed time: " << elapsed << " seconds." << endl;
+    }
+private:
+    chrono::high_resolution_clock::time_point start;
+};
 
 int main() {
-
+Timer timer;
  const int MIN = 0;
  const int MAX = 1'009'999;
 
@@ -84,6 +98,7 @@ int startNum = 0;
  if (i == 0) cout << digits.at(i);
    else if (copy > 0 and copy < 10) cout << digits.at(copy);
  cout << endl;
-  }
-  }
-  }
+    }
+
+}
+}

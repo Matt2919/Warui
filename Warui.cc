@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include <chrono>
 using namespace std;
 
 void die(const string &s = "BAD INPUT!") {
@@ -7,7 +8,21 @@ void die(const string &s = "BAD INPUT!") {
     exit(EXIT_FAILURE);
 }
 
+//funny timer stuf
+class Timer {
+public:
+    Timer() : start(chrono::high_resolution_clock::now()) {}
+    ~Timer() {
+        auto end = chrono::high_resolution_clock::now();
+        double elapsed = chrono::duration<double>(end - start).count();
+        cout << "Elapsed time: " << elapsed << " seconds." << endl;
+    }
+private:
+    chrono::high_resolution_clock::time_point start;
+};
+
 int main() {
+  Timer timer;
     const int MIN = 0;
     const int MAX = 1'000'999;
 
