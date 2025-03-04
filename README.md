@@ -8,7 +8,7 @@ To compile the program with code coverage flags, run:
 
 "make"                  
 
-### 1.5. Before Running
+### 1.5. Before Running (Dont think it's necessary) 
 Before running script you will need to run:
 
 "chmod +x run_all.sh"
