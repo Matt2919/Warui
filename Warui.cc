@@ -28,7 +28,6 @@ int main() {
 
     vector<string> digits = { "ZERO", "ICHI", "NI", "SAN", "YON", "GO", "ROKU", "NANA", "HACHI", "KYUU" };
     vector<string> powers = { "JYUU", "HYAKU", "SEN", "MAN" };
-    // test
 
     int startNum = 0;
     cout << "Please enter a number to start with: " << endl;
@@ -99,6 +98,6 @@ int main() {
             if (i == 0) cout << digits[0];
             else if (copy > 0 && copy < 10) cout << digits[copy];
         }
-        cout << endl;
+        cout << '\n';
     }
 }

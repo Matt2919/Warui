@@ -2,7 +2,7 @@ input_dir="Inputs/"
 
 for input_file in "$input_dir"/*; do
   echo "Running Warui with $input_file"
-  Warui <"$input_file"
+  ./Warui <"$input_file"
 
 done
 
